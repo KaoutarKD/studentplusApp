@@ -1,0 +1,15 @@
+.reminders-container {
+    padding: 40px;
+}
+
+.reminder-item {
+    background: #FFC107;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.reminder-item:hover {
+    background: #E0A800;
+}
