@@ -1,0 +1,17 @@
+.exams-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.exam-card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.exam-card h3 {
+    color: #FF6600;
+}

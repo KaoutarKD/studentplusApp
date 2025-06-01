@@ -1,0 +1,25 @@
+student-plus/
+│── src/
+│   ├── components/
+│   │   ├── Dashboard.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Subjects.jsx
+│   │   ├── Grades.jsx
+│   │   ├── Exams.jsx
+│   │   ├── Documents.jsx
+│   │   ├── Reminders.jsx
+│   ├── styles/
+│   │   ├── global.css
+│   │   ├── Dashboard.css
+│   │   ├── Modules.css
+│   ├── pages/
+        │── Home.jsx      # Page d'accueil
+        │── Login.jsx     # Page de connexion
+        │── Register.jsx  # Page d'inscription
+        │── Subjects.jsx  # Gestion des matières
+        │── Grades.jsx    # Notes et évaluations
+        │── Exams.jsx     # Examens et calendrier
+        │── Documents.jsx # Gestion des documents de cours
+        │── Reminders.jsx # Rappels et échéances
+│── public/
+│── package.json

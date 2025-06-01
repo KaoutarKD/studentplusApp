@@ -1,0 +1,17 @@
+.grades-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.grade-item {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.grade-item:hover {
+    background: #0056b3;
+}

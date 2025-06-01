@@ -1,0 +1,15 @@
+.subjects-container {
+    padding: 40px;
+}
+
+.subject-card {
+    background: #F9F9F9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.subject-card:hover {
+    transform: scale(1.05);
+}

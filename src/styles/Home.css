@@ -1,0 +1,19 @@
+.home-container {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(120deg, #001F3F, #002D62);
+    color: white;
+}
+
+.home-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.home-description {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.5;
+}
