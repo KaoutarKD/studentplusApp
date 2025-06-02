@@ -38,7 +38,7 @@
 }
 
 .icon {
-  color: #007bff;
+  color: var(--bleu-profond);
   font-size: 1.2em;
   margin-right: 10px;
 }
@@ -64,6 +64,7 @@ input {
 
 .register-btn:hover {
   transform: scale(1.05);
+  background-color: var(--vert-succès);
 }
 
 /* Lien vers connexion */
@@ -76,5 +77,20 @@ input {
 
 .icon-link {
   margin-right: 5px;
-  color: #007bff;
+  color: var(--bleu-profond);
+}
+
+
+.google-btn {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--gris-profond);
+}
+
+.google-btn:hover {
+  transform: scale(1.05);
+  background-color: #007bff;
+  color: var(--gris-profond);
+}
+.login-link {
+  color: var(--bleu-profond);
 }
