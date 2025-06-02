@@ -30,7 +30,7 @@
 .app-name {
     font-size: 28px;
     font-weight: bold;
-    color: var(--orange-doux);
+    color: #0d82f7;
 }
 
 /* ✨ Texte d’accueil */
@@ -55,7 +55,7 @@
 }
 
 .social-login:hover {
-    background: var(--bleu-profond);
+    background: var(--vert-succès);
 }
 
 /* 📌 Ligne séparatrice */
@@ -86,7 +86,7 @@
 .login-btn {
     width: 100%;
     padding: 12px;
-    background: var(--orange-doux);
+    background:#0d82f7;
     color: white;
     border: none;
     border-radius: 5px;
@@ -96,7 +96,7 @@
 }
 
 .login-btn:hover {
-    background: var(--vert-succès);
+    background: var(--bleu-profond);
     transform: scale(1.05);
 }
 

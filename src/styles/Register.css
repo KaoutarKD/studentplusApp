@@ -1,38 +1,80 @@
-.register {
-    text-align: center;
-    padding: 50px;
-    background: #fff;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    max-width: 400px;
-    margin: 50px auto;
+.register-container {
+  text-align: center;
+  padding: 40px;
+  max-width: 400px;
+  margin: 50px auto;
+  background: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  .register h1 {
-    font-size: 2em;
-    color: #007bff;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .register input {
-    display: block;
-    width: 80%;
-    padding: 10px;
-    margin: 10px auto;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .register-btn {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .register-btn:hover {
-    transform: scale(1.05);
-  }
-  
+}
+
+/* Style des champs avec icônes */
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px auto;
+  width: 80%;
+  transition: border-color 0.3s ease;
+}
+
+.input-container:hover {
+  border-color: #007bff;
+}
+
+.icon {
+  color: #007bff;
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+/* Champs de formulaire */
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+/* Bouton d'inscription */
+.register-btn {
+  background: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.register-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Lien vers connexion */
+.login-link {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-link {
+  margin-right: 5px;
+  color: #007bff;
+}
