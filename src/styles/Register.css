@@ -29,7 +29,7 @@
   border-radius: 5px;
   padding: 10px;
   margin: 10px auto;
-  width: 80%;
+  width: 90%;
   transition: border-color 0.3s ease;
 }
 
@@ -94,3 +94,4 @@ input {
 .login-link {
   color: var(--bleu-profond);
 }
+

@@ -11,8 +11,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: var(--bleu-profond);
+    height: 140vh;
+    background: #092a4cbe;
 }
 
 /* 💎 Carte de connexion */
@@ -26,12 +26,6 @@
     width: 90%;
 }
 
-/* 🔥 Nom de l'application */
-.app-name {
-    font-size: 28px;
-    font-weight: bold;
-    color: #0d82f7;
-}
 
 /* ✨ Texte d’accueil */
 .welcome-text {

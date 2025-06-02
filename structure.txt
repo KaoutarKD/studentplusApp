@@ -4,6 +4,7 @@ studentplusApp/
 │   ├── components/
 │   │   ├── Dashboard.jsx
 │   │   ├── Navbar.jsx
+│   │   ├── Logo.jsx
 
 │   ├── styles/
 │   │   ├── global.css
@@ -13,6 +14,7 @@ studentplusApp/
 │   │   ├── Exams.css
 │   │   ├── Documents.css
 │   │   ├── Reminders.css
+│   │   ├── Logo.css
 │   ├── pages/
         │── Home.jsx      # Page d'accueil
         │── Login.jsx     # Page de connexion

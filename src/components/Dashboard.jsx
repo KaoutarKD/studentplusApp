@@ -15,8 +15,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <h1>🎓 Bienvenue sur Student+</h1>
-      <p>Organisez votre parcours académique avec une interface dynamique.</p>
+      <h1> Bienvenue sur Student+</h1>
 
       <div className="modules-grid">
         {sections.map((section, index) => (

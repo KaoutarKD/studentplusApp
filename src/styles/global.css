@@ -1,3 +1,9 @@
+:root {
+    --bleu-profond: #1565C0;
+    --vert-succès: #28A745;
+    --gris-profond: #555;
+  }
+  
 /* 🌍 Style Global - Uniformisation du design */
 body {
     font-family: 'Poppins', sans-serif;

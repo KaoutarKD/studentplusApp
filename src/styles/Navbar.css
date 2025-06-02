@@ -22,7 +22,7 @@
   list-style: none;
 }
 
-.nav-links a {
+.liens {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -33,7 +33,7 @@
 }
 
 /* Animation de survol */
-.nav-links a:hover {
+.liens:hover {
   color: #ffdd57;
   transform: scale(1.1);
 }

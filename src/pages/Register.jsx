@@ -5,8 +5,9 @@ import { FaUser, FaEnvelope, FaLock, FaSignInAlt } from "react-icons/fa";
 const Register = () => {
   return (
     <div className="register-container">
-      <h1>Créez votre compte Student+</h1>
-      <p>Rejoignez-nous et accédez à votre espace académique.</p>
+      <img src="/logo.png" alt="Student+ Logo" style={{ width: "100px", height: "auto" }} />
+
+      <h1>Créez votre compte </h1>
 
       <button className="google-btn">Inscription avec Google</button>
       <p className="separator">OU</p>
