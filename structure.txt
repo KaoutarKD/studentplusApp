@@ -1,17 +1,18 @@
-student-plus/
+studentplusApp/
+│───backend/
 │── src/
 │   ├── components/
 │   │   ├── Dashboard.jsx
 │   │   ├── Navbar.jsx
-│   │   ├── Subjects.jsx
-│   │   ├── Grades.jsx
-│   │   ├── Exams.jsx
-│   │   ├── Documents.jsx
-│   │   ├── Reminders.jsx
+
 │   ├── styles/
 │   │   ├── global.css
 │   │   ├── Dashboard.css
-│   │   ├── Modules.css
+│   │   ├── Subjects.css
+│   │   ├── Grades.css
+│   │   ├── Exams.css
+│   │   ├── Documents.css
+│   │   ├── Reminders.css
 │   ├── pages/
         │── Home.jsx      # Page d'accueil
         │── Login.jsx     # Page de connexion

@@ -1,13 +1,15 @@
 import React from "react";
 import "../styles/Home.css";
 
-const Home = () => {
+function Home() {
   return (
-    <div>
-      <h2>Bienvenue sur Student+</h2>
-      <p>Gérez vos matières, vos notes et vos examens facilement.</p>
+    <div className="home">
+      <h1>Bienvenue sur StudentPlus 🎓</h1>
+      <p>Votre outil idéal pour organiser et suivre vos cours, notes et examens.</p>
+      <button className="explore-btn">Explorer</button>
     </div>
   );
-};
+}
 
 export default Home;
+

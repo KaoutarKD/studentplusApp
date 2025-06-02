@@ -1,15 +1,36 @@
-.subjects-container {
-    padding: 40px;
-}
-
-.subject-card {
-    background: #F9F9F9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-}
-
-.subject-card:hover {
+.subjects {
+    text-align: center;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 50px auto;
+  }
+  
+  .subjects h1 {
+    font-size: 2em;
+    color: var(--orange-doux);
+  }
+  
+  .subjects ul {
+    list-style: none;
+    padding: 0;
+    font-size: large;
+  }
+  
+  .subjects li {
+    background: #007bff;
+    color: var(--orange-doux);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .subjects li:hover {
     transform: scale(1.05);
-}
+    color: var(--orange-doux);
+    background-color: aquamarine;
+  }
+  

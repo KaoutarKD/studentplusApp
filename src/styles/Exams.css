@@ -1,17 +1,39 @@
-.exams-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.exams {
+    text-align: center;
     padding: 40px;
-}
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
 
-.exam-card {
-    background: white;
-    padding: 20px;
-    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-}
+  }
+  
+  .exam-table h1{
+    color: var(--orange-doux);
 
-.exam-card h3 {
-    color: #FF6600;
-}
+  }  
+  .exam-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .exam-table th, .exam-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .exam-table th {
+    background: #007bff;
+    color:#ffdd57;
+  }
+  
+  .exam-table td {
+    background: #f4f4f4;
+  }
+  
+  .exam-table tr:hover {
+    background: #ffdd57;
+  }
+  

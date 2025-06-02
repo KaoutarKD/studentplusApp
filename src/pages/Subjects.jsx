@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import "../styles/Subjects.css";
 
-const Subjects = () => {
-  const [subjects, setSubjects] = useState(["Maths", "Physique", "Informatique"]);
+const subjectsList = ["Mathématiques", "Physique", "Informatique", "Histoire"];
 
+function Subjects() {
   return (
-    <div>
-      <h2>Gestion des matières</h2>
+    <div className="subjects">
+      <h1>📚 Votre matières</h1>
       <ul>
-        {subjects.map((subject, index) => (
+        {subjectsList.map((subject, index) => (
           <li key={index}>{subject}</li>
         ))}
       </ul>
     </div>
   );
-};
+}
 
 export default Subjects;
+

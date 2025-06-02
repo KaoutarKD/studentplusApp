@@ -5,14 +5,15 @@ import "../styles/Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>Student+</h1>
-      <ul>
-        <li><Link to="/">🏠 Accueil</Link></li>
-        <li><Link to="/subjects">📚 Matières</Link></li>
-        <li><Link to="/grades">📊 Notes</Link></li>
-        <li><Link to="/exams">📅 Examens</Link></li>
-        <li><Link to="/documents">📄 Documents</Link></li>
-        <li><Link to="/reminders">⏳ Rappels</Link></li>
+      <div className="logo"><Link to="/" className="home-link">Student +</Link></div>
+      <ul className="nav-links">
+        <li><Link to="/subjects" className="liens">📚 Matières</Link></li>
+        <li><Link to="/grades" className="liens">📊 Notes</Link></li>
+        <li><Link to="/exams" className="liens">📅 Examens</Link></li>
+        <li><Link to="/documents" className="liens">📄 Documents</Link></li>
+        <li><Link to="/reminders" className="liens">⏳ Rappels</Link></li>
+        <li><Link to="/login" className="liens">| Se connecter |</Link></li>
+
       </ul>
     </nav>
   );
