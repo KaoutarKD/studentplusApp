@@ -1,16 +1,26 @@
+/* 📝 Champs de saisie */
+.input-field {
+  
+  width: 30%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid var(--bleu-profond);
+  border-radius: 5px;
+  font-size: 16px;
+}
 .exams {
     text-align: center;
     padding: 40px;
     background: #fff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    max-width: 600px;
-    margin: 50px auto;
+    max-width: 400px;
+    margin: 50px 50px;
 
   }
   
   .exam-table h1{
-    color: var(--orange-doux);
+    color: black;
 
   }  
   .exam-table {
@@ -25,15 +35,30 @@
   }
   
   .exam-table th {
-    background: #007bff;
-    color:#ffdd57;
+    background: linear-gradient(135deg, #00224D, #494949);
+    color:#00224D;
   }
   
   .exam-table td {
-    background: #f4f4f4;
+    background: #333;
   }
   
   .exam-table tr:hover {
-    background: #ffdd57;
+    background: var(--bleu-profond);
   }
   
+  #bttn {
+    color: var(--gris-profond);
+    text-align: center;
+    background-color: #00224D;
+  }
+
+  #bttn:hover {
+    color: #00224D;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .titre {
+    color: #333;
+    text-align: center;
+    
+  }

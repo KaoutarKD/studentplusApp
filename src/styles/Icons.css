@@ -1,0 +1,15 @@
+/* Effet de survol sur les icônes */
+h2 svg, h3 svg {
+  transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+h2:hover svg, h3:hover svg {
+  transform: scale(1.2) rotate(10deg);
+  color: #ffc107;
+}
+
+/* Style des icônes dans les rappels */
+.reminder-item svg {
+  margin-right: 8px;
+  color: #ffdd57;
+}

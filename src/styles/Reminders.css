@@ -1,0 +1,41 @@
+/* 🎨 Conteneur principal avec un gradient bleu foncé vers gris */
+.reminders-container {
+  background: linear-gradient(135deg, #00224D, #494949); /* 🔹 Bleu profond → Gris profond */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 🔔 Style des rappels */
+.reminder-item {
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+#title{
+  color: #5f5f5f;
+}
+
+.reminder-item:hover {
+  background-color: #00274D; 
+}
+
+
+/* 🔥 Animation fluide */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

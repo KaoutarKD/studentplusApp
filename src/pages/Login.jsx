@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion"; // ✅ Ajout de Framer Motion
 import "../styles/Login.css";
 import { useNavigate } from "react-router-dom";
 
@@ -9,36 +10,39 @@ const Login = ({ setIsAuthenticated }) => {
 
   const handleLogin = () => {
     if (email && password) {
-      setIsAuthenticated(true); 
-      navigate("/dashboard"); 
+      setIsAuthenticated(true);
+      navigate("/dashboard");
     }
   };
+
   return (
-    <div className="login-container">
+    <motion.div
+      className="login-container"
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 10 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="login-card">
-      <img src="/logo.png" alt="Student+ Logo" style={{ width: "100px", height: "auto" }} />
+        <img src="/logo.png" alt="Student+ Logo" style={{ width: "100px", height: "auto" }} />
 
-        <h1 className="app-name">Se connecter </h1> 
-        <p className="welcome-text">Pr&ecirc;t(e) pour acc&eacute;der &agrave; votre espace acad&eacute;mique?</p>
+        <h1 className="app-name">Se connecter</h1>
+        <p className="welcome-text">Prêt(e) pour accéder à votre espace académique?</p>
 
-        
         <button className="social-login microsoft-login">Connexion avec Microsoft</button>
 
-        
-        <div className="separator"><span><hr/>OU</span></div>
+        <div className="separator"><span><hr />OU</span></div>
 
-        
         <form onSubmit={(e) => e.preventDefault()}>
-          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} className="input-field"/>
-          <input type="password" placeholder="Mot de passe" value={password} onChange={(e) => setPassword(e.target.value)} className="input-field"/>
+          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} className="input-field" />
+          <input type="password" placeholder="Mot de passe" value={password} onChange={(e) => setPassword(e.target.value)} className="input-field" />
           <button type="submit" className="login-btn" onClick={handleLogin}>Se connecter</button>
         </form>
 
-        {/* 🔹 Liens secondaires */}
         <p className="forgot-password"><a href="A REMPLIR">Mot de passe oublié ?</a></p>
         <p className="register-link">Pas encore inscrit ? <a href="/register">Créez un compte</a></p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

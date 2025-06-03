@@ -1,21 +1,31 @@
-import React from "react";
-import "../styles/Remiders.css";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { FaBell } from "react-icons/fa";
+import "../styles/Reminders.css";
+import "../styles/Icons.css";
 
-const remindersData = [
-  { title: "📝 Devoir de maths", date: "5 Juin" },
-  { title: "📅 Examen de physique", date: "10 Juin" },
-  { title: "📢 Présentation informatique", date: "12 Juin" },
-];
+const Reminders = () => {
+  const [reminders, setReminders] = useState([
+    { id: 1, subject: "Mathématiques", date: "2025-06-10" },
+    { id: 2, subject: "Physique", date: "2025-06-12" },
+  ]);
 
-const Reminders = () => (
-  <div className="reminders">
-    <h1>⏰ Rappels & Échéances</h1>
-    <ul>
-      {remindersData.map((reminder, index) => (
-        <li key={index}>{reminder.title} - {reminder.date}</li>
+  return (
+    <motion.div 
+      className="reminders-container"
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 10 }}
+      transition={{ duration: 0.5 }}
+    >
+      <h2 id="title"> Rappels des Examens</h2>
+      {reminders.map((reminder, index) => (
+        <div key={index} className="reminder-item">
+          <FaBell /> {reminder.subject} - {reminder.date}
+        </div>
       ))}
-    </ul>
-  </div>
-);
+    </motion.div>
+  );
+};
 
 export default Reminders;
