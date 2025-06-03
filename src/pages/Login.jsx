@@ -22,15 +22,15 @@ const Login = ({ setIsAuthenticated }) => {
         <p className="welcome-text">Pr&ecirc;t(e) pour acc&eacute;der &agrave; votre espace acad&eacute;mique?</p>
 
         
-        <button className="social-login apple-login">Connexion avec Google</button>
+        <button className="social-login microsoft-login">Connexion avec Microsoft</button>
 
         
         <div className="separator"><span><hr/>OU</span></div>
 
         
         <form onSubmit={(e) => e.preventDefault()}>
-          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          <input type="password" placeholder="Mot de passe" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} className="input-field"/>
+          <input type="password" placeholder="Mot de passe" value={password} onChange={(e) => setPassword(e.target.value)} className="input-field"/>
           <button type="submit" className="login-btn" onClick={handleLogin}>Se connecter</button>
         </form>
 
