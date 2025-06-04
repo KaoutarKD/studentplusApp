@@ -16,8 +16,13 @@ body {
 
 /* ✅ Typographie et Structure */
 h1, h2 {
-    color: #002D62;
+    color:#555;
     font-weight: bold;
+}
+
+h1:hover, h2:hover {
+    color: #ffc107;
+
 }
 
 h1 {

@@ -5,6 +5,8 @@ studentplusApp/
 │   │   ├── Dashboard.jsx
 │   │   ├── Navbar.jsx
 │   │   ├── Logo.jsx
+|   |   |── Calendar.jsx 
+
 
 │   ├── styles/
 │   │   ├── global.css
@@ -15,6 +17,8 @@ studentplusApp/
 │   │   ├── Documents.css
 │   │   ├── Reminders.css
 │   │   ├── Logo.css
+│   │   ├── Icons.css
+│   │   ├── Calendar.css
 │   ├── pages/
         │── Home.jsx      # Page d'accueil
         │── Login.jsx     # Page de connexion

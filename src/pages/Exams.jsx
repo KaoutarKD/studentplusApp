@@ -33,9 +33,9 @@ const Exams = () => {
       transition={{ duration: 0.5 }}
     >
       <h1 className="titre"><FaBook /> Ajouter un examen</h1>
-      <input type="text" placeholder=" Matière" value={subject} onChange={(e) => setSubject(e.target.value)} className="input-field" />
-      <input type="date" value={date} onChange={(e) => setDate(e.target.value)} className="input-field" />
-      <input type="time" value={time} onChange={(e) => setTime(e.target.value)} className="input-field" />
+      <input type="text" placeholder=" Matière" value={subject} onChange={(e) => setSubject(e.target.value)} className="chats" />
+      <input type="date" value={date} onChange={(e) => setDate(e.target.value)} className="chats" />
+      <input type="time" value={time} onChange={(e) => setTime(e.target.value)} className="chats" />
       <button id="bttn" onClick={handleAddExam}><FaFileAlt /> Ajouter</button>
 
       <h3 className="titre"><FaCalendarAlt /> Votre Calendrier</h3>

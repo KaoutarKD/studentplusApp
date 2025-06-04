@@ -1,46 +1,49 @@
-.documents {
-    text-align: center;
-    padding: 40px;
-    background: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    max-width: 500px;
-    margin: 50px auto;
-  }
-  
-  .documents h1 {
-    font-size: 2em;
-    color: #007bff;
-  }
-  
-  .documents p {
-    font-size: 1.2em;
-    color: #555;
-  }
-  
-  .document-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .document-list li {
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border-radius: 5px;
-    margin: 5px;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .document-list li a {
-    text-decoration: none;
-    color: var(--orange-doux);
-    font-weight: bold;
-  }
-  
-  .document-list li:hover {
-    transform: scale(1.05);
-    color: var(--orange-doux);
-    background-color: aquamarine;
-  }
-  
+.documents-container {
+  background: linear-gradient(135deg, #00224D, #494949);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.upload-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.upload-section input {
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.upload-section button {
+  background: #ffdd57;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.upload-section button:hover {
+  background: #ffc107;
+}
+
+.document-card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.3s;
+}
+
+.document-card:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.05);
+}
